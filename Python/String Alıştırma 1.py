@@ -1,0 +1,13 @@
+N="Fizik:90*Matematik:70*Kimya:50"
+a=N.split("*")
+b=a[0]
+b=b.split(":")
+c=a[1]
+c=c.split(":")
+d=a[2]
+d=d.split(":")
+e=[]
+e.append(b)
+e.append(c)
+e.append(d)
+print(e)

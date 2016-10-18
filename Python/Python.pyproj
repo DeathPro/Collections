@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a150d61c-83c0-4a45-94ea-69071f31b9da</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Deneme.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Python</Name>
+    <RootNamespace>Python</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Break ve Continue.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Büyük Sayi Seçme.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Beden Kütle İndeksi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Asal Sayi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Deneme.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste 7!!!.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste 6.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortalama.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste sıralama,iç içe liste güzel örnek.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste Kopyalama.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste 5.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste Birleştirme 1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste Birleştirme 2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sort,reverse.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste 2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste 3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste 4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liste.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Faktöriyel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Çarpım 1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Not  1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pi Sayisi Hesaplamak.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Seri 1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="While - Else.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Çarpım Tablosu.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="İç İçe Döngü.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="While.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="If Else Kolay Kullanımı.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="İf Else.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tek Çift Sıfır.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="elif kullanımı.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
