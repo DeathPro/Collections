@@ -1,0 +1,20 @@
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+				 int sayac=0; // bosluk sayisini tutar.
+				 String ^karakter;
+				 String ^yazi = textBox1->Text; // textdeki yazýyý string deðiþkene atýyoruz.
+				 String ^yeniyazi;
+					 
+				 for (int i = 0; i < yazi->Length; i++) // yazýnýn uzunlugu kadar döngü kuruyoruz.
+					 {
+						 karakter = yazi->Substring(i,1); // substring string ifadeden belirtilen kadar karakter alýo yani burda tek tek karakterleri alýcak
+						  if (karakter == " ") // karakter boþluða eþitse sayacý artýrcak
+							  {
+								 sayac++;
+						  } else {
+							yeniyazi += karakter; // boþluk deðilse yeniyazý deðiþkenine atýcak
+						  }
+					}
+					label1->Text = yeniyazi; // labele aktar
+					label2->Text = sayac + " bosluk silindi"; // labele aktar.
+			 }
+	};

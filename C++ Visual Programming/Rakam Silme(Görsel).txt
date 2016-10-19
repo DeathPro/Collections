@@ -1,0 +1,37 @@
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+			
+				 int sayac=0;
+				 int sayac2=0;
+
+				 String ^karakter;
+				 String ^yazi = textBox1->Text; // text string deðiþkene aktar
+				 String ^yeniyazi;
+				 String ^rakamlar="0123456789"; // rakamlar için string ifade
+					 
+				 for (int i = 0; i < yazi->Length; i++) // yazýnýn uzunlugu kadar döngü yap
+					 {
+						 karakter = yazi->Substring(i,1); // i.den itibaren 1 karakter oku yani sýrayla karakterleri okucak tek tek.
+						  
+						 for(int j = 0;j < rakamlar->Length;j++){ // rakamlar stringi uzunlugu kadar döngü yap yani 10 a kadar
+
+								if (karakter == rakamlar->Substring(j,1)) // yukarda okunan karakter rakamlardan birine eþit ise
+								{
+								sayac++; // sayaçlarý artýr.bu sayac rakam bulup bulmadýna bakýyor.
+								sayac2++; // sayac 2 bilgi sayacý amaçlý konuldu.
+								} 
+						 } 
+						
+						 if(sayac==0) { // sayac 0 o karakter hiç bir rakama eþleþmiyor o zaman yazý deðiþkenine ekleyebiliriz. demekki rakam deðil.
+							yeniyazi += karakter;
+						 }
+						
+						 sayac=0;//burda ilk sayacý sýfýrlýyoruz diðer harfe geçince rakam sayýsý 0 lanýp tekrar arýycak.
+					}
+					
+					label1->Text = yeniyazi; // label yansýt
+					label2->Text = sayac2 + " rakam silindi"; //label yansýt.
+
+
+
+			 }
+	};
