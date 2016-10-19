@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+int main(void)
+{
+	int a,b,i,c,sonuc;
+	printf("Ussu alinacak sayi: ");
+	scanf("%d",&a);
+	printf("Us: ");
+	scanf("%d",&b);
+	c=0;
+	i=1;
+	while(i<=b){
+		c=c+i;
+		i++;
+	}
+	
+	sonuc=pow(a,c);
+	printf("%d",sonuc);
+	}
