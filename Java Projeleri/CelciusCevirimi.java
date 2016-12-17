@@ -24,12 +24,12 @@ public class CelciusCevirimi {
 	}
 
 	public static void main(String[] args) {
-		Scanner derece = new Scanner(System.in);
+		Scanner sayi = new Scanner(System.in);
 		int a = 1;
 		int b = 0;
 		while (true) {
 			System.out.println("1-)Fahrenheit to Celsius\n2-)Celsius to Fahrenheit\n3-)Exit\n");
-			a = derece.nextInt();
+			a = sayi.nextInt();
 			switch (a) {
 			case 1:
 				Fc();
