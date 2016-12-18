@@ -6,7 +6,7 @@ public class Main2_Exceptions {
 		int[] dizi = new int[3];
 		dizi[0] = 1;
 		dizi[1] = 2;
-		dizi[2] = 3;
+		dizi[2] = 15;
 		try {
 			System.out.println("Sayi1 : " + dizi[0]);
 			System.out.println("Sayi2 : " + dizi[1]);
@@ -15,6 +15,8 @@ public class Main2_Exceptions {
 			// yaparsan hata olmadigi gorulur ve catch blogu isletilmez :D
 			System.out.println("Hatadan Sonra catch Blogu Isletilir Program durmasin :))");
 		} catch (ArrayIndexOutOfBoundsException e1) {
+			System.out.println(e1.getMessage());
+			System.out.println(e1.toString());
 			System.out.println("Dizinin Boyutunun Disina Cikmaaaaa");
 		}
 		System.out.println("Evet Calismadi :D:D");

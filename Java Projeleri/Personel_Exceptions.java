@@ -16,7 +16,7 @@ public class Personel_Exceptions {
 		return yas;
 	}
 
-	public void setYas(int yas) {
+	public void setYas(int yas)throws IllegalArgumentException {
 		if (yas < 0) {// istisna nesnesi firlatiliyor....
 			IllegalArgumentException istisna = new IllegalArgumentException("Personel Yasini Dikkatli Giriniz !");
 			throw istisna;//maindeki catch bloguna bu nesneyi firlattim...
