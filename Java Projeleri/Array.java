@@ -4,12 +4,12 @@ public class Array {
 	public static void main(String[] args) {
 
 		String[] name = new String[4];
-		String[] city = { "Ankara", "Ýstanbul", "Bolu", "Trabzon" };
+		String[] city = { "Ankara", "İstanbul", "Bolu", "Trabzon" };
 
 		name[0] = "Mehmet";
 		name[2] = "Hatice";
 		name[3] = "Nalan";
-		name[4] = "Aylin";
+		//name[4] = "Aylin";
 		name[1] = "Ali";
 
 		System.out.println("name     city");

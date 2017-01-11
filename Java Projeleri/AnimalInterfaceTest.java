@@ -25,7 +25,7 @@ class Animal implements AnimalInterface {
 
 public class AnimalInterfaceTest {
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Animal an = new Animal();
 		an.eat();
 		an.travel();

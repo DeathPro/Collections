@@ -18,7 +18,8 @@ class Animal {
 
 class Cow extends Animal {
 	public Cow(String name) {
-		super(name);
+		super(name);// superclass ta name private tanımlandığından direk
+					// erişemessinnn ondan böyle erişiyorsun !!!
 	}
 
 	public String sound() {

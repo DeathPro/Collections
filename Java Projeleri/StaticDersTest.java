@@ -20,7 +20,9 @@ public class StaticDersTest {
 		A.i = 0;
 		A a0 = new A();
 		A a1 = new A();
-
+		
+		//a0.i=5;
+		//A.i=11;
 		a0.display();
 		a1.display();
 		A.display();

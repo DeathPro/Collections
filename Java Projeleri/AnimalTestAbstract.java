@@ -55,8 +55,14 @@ public class AnimalTestAbstract {
 		System.out.println(h.speak());
 		System.out.println(c.speak());
 		System.out.println(s.speak());
+		// print(h);
+		// print(c);
+		// print(s);
 
 		// Animal s = new Animal(); // error Animal is abstract cannot be
 		// instantiated
 	}
+	// public static void print(Animal a){
+	// System.out.println(a.speak());
+	// }
 }

@@ -31,13 +31,9 @@ public class DivideByZeroWithExceptionHandling {
 			} catch (ArithmeticException arithmeticException) {
 				System.err.printf("%nException: %s%n", arithmeticException);
 				System.out.printf("Zero is an invalid denominator. Please try again.");
-			}
-
-			catch (Exception e) {
+			} catch (Exception e) {
 				System.err.printf("%nException: %s%n", e);
-			}
-
-			finally {
+			} finally {
 				System.out.println("Islem Sonlandi.");
 			}
 		} while (continueLoop);

@@ -6,7 +6,8 @@ public class IstisnaYakalamaArray {
 		for (int i = 0; i < 5; i++) {
 			try {
 				System.out.println("-> " + sayilar[i]);
-			} catch (Exception ex) {
+			} catch (Exception ex) {// (ArrayOutofBoundsException ex) de olur.
+									// koddaki geneldir.
 				System.out.println("Hata Yakalandi " + ex);
 			} finally {
 				System.out.println("bitti");
