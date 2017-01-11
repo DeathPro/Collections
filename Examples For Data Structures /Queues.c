@@ -22,8 +22,8 @@ typedef struct q queue;
 
 void initialize(queue *q) {
 	q->cnt = 0;
-	q->front = NULL; //q->front=q->rear=NULL;
-	q->rear = NULL;	 //
+	q->front = NULL; //q->front = q->rear = NULL;
+	q->rear = NULL;
 }
 
 int isempty(queue *q) {

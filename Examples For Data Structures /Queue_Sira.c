@@ -63,7 +63,7 @@ void display() {
 	if (isEmpty())
 		printf("Sira Bos !\n");
 	else {
-		for (i = 0; i <= rear; i++)
+		for (i = front; i <= rear; i++)
 			printf("%d  ", queue[i]);
 		printf("\n");
 	}
