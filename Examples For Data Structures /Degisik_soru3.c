@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main(){
+    if(printf("Hello world")){
+    }
+}
+
+/*
+Solution: 2
+
+#include<stdio.h>
+void main(){
+    while(!printf("Hello world")){
+    }
+}
+
+Solution: 3
+
+#include<stdio.h>
+void main(){
+    switch(printf("Hello world")){
+    }
+}
+ */

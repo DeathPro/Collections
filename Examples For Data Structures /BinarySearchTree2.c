@@ -327,13 +327,48 @@ node *RightLeftRotation(node *temp) {
 	return LeftRotation(temp);
 }
 
+int LeafNode(node *temp) {
+	if (temp == NULL)
+		return 0;
+	if (temp->rightc == NULL && temp->leftc == NULL)
+		return 1;
+	else
+		return LeafNode(temp->leftc) + LeafNode(temp->rightc);
+}
+
+int size(node *temp) {
+	if (temp == NULL)
+		return 0;
+	else
+		return (size(temp->leftc) + size(temp->rightc) + 1);
+}
+void FindBalance(node *temp) {
+	int lefth = 0;
+	int righth = 0;
+	int result = 0;
+	lefth = FindHeight(temp->leftc);
+	righth = FindHeight(temp->rightc);
+
+	if (Max(lefth, righth) == lefth)
+		result = lefth - righth;
+	else
+		result = righth - lefth;
+
+	if (result == 0)
+		printf("Agac Bir Perfect Tree dir !\n");
+	else if (result <= 1)
+		printf("Agac Bir AVL Agactir !\n");
+	else
+		printf("Agac Dengeli Bir Agac Degildir !\n");
+}
+
 int main(int argc, char **argv) {
 	int secim, numara;
 	while (1) {
 		printf(
 				"\n1-)Insert\n2-)InsertRecursive\n3-)Delete\n4-)Search\n5-)SearchRecursive\n6-)MinRecursive\n7-)MaxRecursive\n"
 						"8-)FindHeight\n9-)PreOrder\n10-)InOrder\n11-)PostOrder\n12-)LevelOrder\n13-)LeftRotation\n14-)RightRotation\n15-)LeftRightRotation\n"
-						"16-)RightLeftRotation\n17-)Exit\n");
+						"16-)RightLeftRotation\n17-)Total Number of Leaf Node\n18-)Total Number of Node\n19-)Balance\n20-)Exit\n");
 		scanf("%d", &secim);
 		switch (secim) {
 		case 1:
@@ -406,6 +441,15 @@ int main(int argc, char **argv) {
 			root = RightLeftRotation(searchTekrarli(root, numara));
 			break;
 		case 17:
+			printf("Agactaki Toplam Yaprak Sayisi : %d\n", LeafNode(root));
+			break;
+		case 18:
+			printf("Agactaki Toplam Dugum Sayisi : %d\n", size(root));
+			break;
+		case 19:
+			FindBalance(root);
+			break;
+		case 20:
 			exit(0);
 		default:
 			printf("Gecersiz Sayi Girdiniz ! Lutfen Tekrar Deneyiniz. \n");
