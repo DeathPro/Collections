@@ -18,6 +18,7 @@ public class CharacterControl : MonoBehaviour
     Text highText, scoreText;
     ParticleSystem particleEffect;
     AudioSource crystalSound;
+    float elapseTime;
 
     // Start is called before the first frame update
     void Start()
@@ -50,8 +51,18 @@ public class CharacterControl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
             Turn();
-        else
-            Move();
+
+        if (Input.touchCount > 0)
+        {
+            switch (Input.GetTouch(0).phase)
+            {
+                case TouchPhase.Began:
+                    Turn();
+                    break;
+            }
+        }
+        
+        Move();
 
         Debug.DrawRay(rayOrigin.position, Vector3.down * 10, Color.blue);
         // Debug.Log("Run Fonksiyonu");
@@ -63,6 +74,13 @@ public class CharacterControl : MonoBehaviour
 
     private void Move()
     {
+        if ((elapseTime += Time.deltaTime) > 3)
+        {
+            animator.speed += 0.1f;
+            moveSpeed += 0.3f;
+            elapseTime = 0;
+        }
+
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
         setRunAnimation();
     }

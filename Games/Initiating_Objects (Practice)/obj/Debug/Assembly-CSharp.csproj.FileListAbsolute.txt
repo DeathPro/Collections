@@ -282,3 +282,5 @@ D:\Unity_Projects\Initiating_Objects\obj\Debug\Assembly-CSharp.csproj.CoreCompil
 D:\Unity_Projects\Initiating_Objects\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\Unity_Projects\Initiating_Objects\obj\Debug\Assembly-CSharp.dll
 D:\Unity_Projects\Initiating_Objects\obj\Debug\Assembly-CSharp.pdb
+D:\Unity_Projects\Initiating_Objects\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.dll
+D:\Unity_Projects\Initiating_Objects\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.xml
