@@ -7,7 +7,7 @@ public class CharacterControl : MonoBehaviour
 {
     // public SceneController sahneKontrol;
 
-    public float moveSpeed = 1;
+    public float moveSpeed = 1.5f;
     public bool sagaBakiyor = true;
     public bool isFalling = false;
     public bool triggered = false;
@@ -74,7 +74,7 @@ public class CharacterControl : MonoBehaviour
 
     private void Move()
     {
-        if ((elapseTime += Time.deltaTime) > 3)
+        if ((elapseTime += Time.deltaTime) > 10)
         {
             animator.speed += 0.1f;
             moveSpeed += 0.3f;
@@ -167,7 +167,7 @@ public class CharacterControl : MonoBehaviour
         {
             particleEffect.Play();
             crystalSound.Play();
-            Destroy(other.gameObject, 0.5f);
+            Destroy(other.gameObject, 0.4f);
             // instansiate de kullanılabilir.
         }
     }
